@@ -1,0 +1,42 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 6,
+      "y": 0,
+      "width": 6,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [ "AWS/DynamoDB", "ConsumedReadCapacityUnits", "TableName", "HotelCatalog" ],
+          [ ".", "ConsumedWriteCapacityUnits", ".", "." ]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "stat": "Sum",
+        "period": 3600,
+        "title": "DynamoDB HotelCatalog ConsumedCapacityMetrics"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 6,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [ "AWS/S3", "BucketSizeBytes", "StorageType", "StandardStorage", "BucketName", "samrat-aws-handson" ],
+          [ ".", "NumberOfObjects", ".", "AllStorageTypes", ".", "." ]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-west-2",
+        "stat": "Average",
+        "period": 86400,
+        "title": "S3 Bucket Metrics"
+      }
+    }
+  ]
+}

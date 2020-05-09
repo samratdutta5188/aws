@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowAllS3BucketOperations",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::128684055682:root"
+        ]
+      },
+      "Action": "s3:*",
+      "Resource": "arn:aws:s3:::samrat-aws-handson/*"
+    }
+  ]
+}
