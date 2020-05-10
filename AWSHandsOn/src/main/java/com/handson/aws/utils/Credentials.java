@@ -4,9 +4,9 @@ import software.amazon.awssdk.regions.Region;
 
 public class Credentials {
 
-    public static final String ACCESS_KEY_ID = "AKIAR35RK3SBK3NOCENT";
+    public static final String ACCESS_KEY_ID = "YOUR ACCESS KEY";
 
-    public static final String SECRET_KEY = "IZFtnQfTXGVfMbWFXtDOnvY2T1KUaY3V4rJpzCFQ";
+    public static final String SECRET_KEY = "YOUR SECRET KEY";
 
     public static final Region REGION = Region.US_WEST_2;
 
